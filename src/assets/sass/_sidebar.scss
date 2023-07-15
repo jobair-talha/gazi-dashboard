@@ -14,4 +14,30 @@
   -moz-box-shadow: 1px 0 10px rgba(69, 65, 78, 0.06);
   box-shadow: 1px 0 10px rgba(69, 65, 78, 0.06);
   transition: all 0.3s;
+
+  .menu-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .sub-menu-list {
+      padding-left: 20px;
+      overflow: hidden;
+      transition: all linear 0.4s;
+      -webkit-transition: all linear 0.4s;
+      -moz-transition: all linear 0.4s;
+      -ms-transition: all linear 0.4s;
+      -o-transition: all linear 0.4s;
+    }
+    .sub-menu-list {
+      max-height: 0;
+    }
+    &:hover .sub-menu-list {
+      max-height: 200px;
+      width: 200px;
+      margin-left: 3px !important;
+      border-radius: 4px;
+    }
+    /* .active ~ .sub-menu-list {
+      height: 100px;
+    } */
+  }
 }

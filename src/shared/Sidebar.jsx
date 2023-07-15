@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../assets/sass/_sidebar.scss";
 
 const Sidebar = () => {
@@ -21,6 +21,60 @@ const Sidebar = () => {
         <ul>
           <li>
             <Link to={"/dashboard"}>Dashboard</Link>
+          </li>
+          <li class="menu-item sub-menu">
+            <NavLink to={"/"}>
+              <span class="menu-icon">
+                <i class="ri-bar-chart-2-fill"></i>
+              </span>
+              <span class="menu-title">Charts</span>
+            </NavLink>
+            <div class="sub-menu-list">
+              <ul>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-title">Pie chart</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-title">Line chart</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-title">Bar chart</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item sub-menu">
+            <a href="#">
+              <span class="menu-icon">
+                <i class="ri-bar-chart-2-fill"></i>
+              </span>
+              <span class="menu-title">Charts</span>
+            </a>
+            <div class="sub-menu-list">
+              <ul>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-title">Pie chart</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-title">Line chart</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-title">Bar chart</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
